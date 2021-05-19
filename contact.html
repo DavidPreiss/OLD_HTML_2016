@@ -1,0 +1,170 @@
+<!--
+   File created by David Preiss on 12/5/2016
+   File created using Notepad++
+   File modified on 12/5/2016 by David Preiss
+   Purpose of file: Team Web Page
+   -->
+<html>
+<head>
+  <link rel="icon" href="scoop.png">
+      <title> L02 </title>
+   </head>
+   <table width="100%" height="100%">
+	<tr height="100"><!--Top-->
+		<td colspan=2 bgcolor="#EEEEFF">
+      <table width="100%" height="100%">
+         <tr>
+            <td bgcolor="#FFFFFF" height="100%" width="30%">
+               <font size=+4>
+               Team Webpage
+               </font>
+            </td>
+            <td height="100%" width="40%">
+               <h1 align="center">
+                  E-Scoops
+               </h1>
+               <p align="center">
+                  We'll mail you ice cream!
+               </p>
+            </td>
+            <td bgcolor="#FFFFFF" width="30%">
+               <img src="scoop.png" height="50%">
+            </td>
+         </tr>
+      </table>
+		</td>
+	</tr>
+<!--Top-->
+	<tr>
+<!--Bottom-->
+		<td bgcolor="#FFEE99" width="25%" height="250">
+	<!--Left-->
+		<ul>
+			<li>
+			<a href="team.html">Main Page</a>
+			</li><li>
+			<a href="coMission.html">Company Mission</a>
+			</li><li>
+			<a href="productInfo.html">Product Info</a>
+			</li><li>
+			<a href="prices.html">Prices</a>
+			</li><li>
+			<a href="else.html">Something Else</a>
+			</li><li>
+			Contact us
+			</li>
+		</ul>
+		</td>
+	<!--Left-->
+		<td>
+	<!--Right-->
+		<h2 align="center">
+		<font color="#00FF00">
+		Contact Us</font>
+		</h2>
+		<!--
+		<p>
+		This page should be a form.
+		The form will use the mailto option for the type of ACTION. 
+		Somewhere on the form you must include a
+		simple text box <'input> tag, a <'textarea> tag of at least 5 
+		rows and 25 columns, at least one Radio type <'input>
+		tag with at least 3 different choices, at least one Check Box 
+		type <'input> tag with the checked option and at
+		least 5 different options, a reset button, a submit button, 
+		and at least two different <'select> tag pull down menus
+		with at least 5 different options in each menu (use the selected 
+		option). 
+		Add a form validation section to the web page so 
+		there is a javascript that repeats everything that the user
+		selects. Have it display this at the bottom of the page.
+		</p>
+		-->
+		<form action="mailto:dap152@pitt.edu" 
+		method="post" 
+		enctype="text/plain">
+			<p> Please enter your full name
+		<input type="text"
+			id="userName"
+			size="30"
+			maxlength="60" />
+	</p>
+	<p> Please enter your credit card number
+		<input type="text"
+			id="userCredit"
+			size="30"
+			maxlength="80" />
+		</p>
+	<p>  Flavor 1 
+		<select name="vote">
+			<option>Vanilla</option>
+			<option>Chocolate</option>
+			<option>Strawberry</option>
+			<option>Mint</option>
+			<option>ButterPecan</option>
+		</select>
+	<br>Flavor 2
+		<select name="vote">
+			<option>Vanilla</option>
+			<option>Chocolate</option>
+			<option>Strawberry</option>
+			<option>Mint</option>
+			<option>ButterPecan</option>
+		</select>
+	</p>
+	<p>Select Scoop Size:<br>
+		<input type="radio"
+			name="userSize"
+			value="1"
+		/>Kiddie Scoop
+		<input type="radio"
+			name="userSize"
+			value="2"
+		/>Single Scoop
+		<input type="radio"
+			name="userSize"
+			value="3"
+		/>Double Scoop
+			
+	</p>
+	<p> Address<br>
+		<textarea rows="5" cols="50" id="Address">
+		</textarea>
+	</p>
+	
+	<p> What what toppings would you like?(Please check all that apply)<br>
+		<input type="checkbox"
+			name="flavor"
+			value="Sprinkles"
+		/>Sprinkles
+		<input type="checkbox"
+			name="flavor"
+			value="Gummy Bears"
+		/>Gummy Bears
+		<input type="checkbox"
+			name="flavor"
+			value="Anchovies"
+		/>Anchovies
+		<input type="checkbox"
+			name="flavor"
+			value="Styrofoam"
+		/>Styrofoam 
+		<input type="checkbox"
+			name="flavor"
+			value="Marshmallows"
+		/>Marshmallows
+	</p>
+	<button>
+		<input type="submit" value="Submit Form"/>
+	</button>
+	<br>
+	<button>
+		<input type="reset" value="Reset Form"/>
+	</button>
+		</form>
+	<button onclick="show()">Display Info</button>
+	</td>
+	<!--Right-->
+	</tr>
+<!--Bottom-->
+</html>
